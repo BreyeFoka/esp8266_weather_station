@@ -1,2 +1,5 @@
-#include <ESP8266WiFi.h>
-void setup() { WiFi.begin("SSID", "PASS"); }
+void loop() {
+  float temp = readBME280();
+  Serial.println(temp);
+  delay(60000);
+}
